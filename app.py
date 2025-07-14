@@ -18,7 +18,7 @@ feature5 = st.number_input("Feature 5 (e.g., Credit Score)", min_value=0.0)
 
 # You must match the order & name of columns used during training
 input_data = pd.DataFrame([[feature1, feature2, feature3, feature4, feature5]],
-                          columns=['feature1', 'feature2', 'feature3', 'feature4', 'feature5'])
+                          columns=['age', 'income', 'loan_amount', 'term', 'credit_score'])  # ← match this to your model
 
 # Predict
 if st.button("Predict"):
